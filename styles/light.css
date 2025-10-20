@@ -1,0 +1,50 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+:root.theme-light {
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+  --bg-image: url('../images/cover-image-light.png');
+  --button-border-hover: rgba(50, 49, 45, 0.4);
+  --accent-color: #ff8dcb;
+  --main-bg-color: #FFC2E6;
+  --text-title-color: #353430;
+  --header-title-color: #FFC2E6;
+  --header-title-shadow-color: #ff8dcb;
+  --header-subtitle-color: #353430;
+  --content-text-color: #353430;
+  --footer-title-color: #FFC2E6;
+  --footer-shadow-color: #ff0070;
+}
+
+:root.theme-light .decorative-rec {
+  display: none;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root.theme-dark {
+    --bg-image: url('../images/cover-image-light.png');
+    --button-border-hover: rgba(50, 49, 45, 0.4);
+    --accent-color: #ff8dcb;
+    --main-bg-color: #FFC2E6;
+    --text-title-color: #353430;
+    --header-title-color: #FFC2E6;
+    --header-title-shadow-color: #ff8dcb;
+    --header-subtitle-color: #353430;
+    --content-text-color: #353430;
+    --footer-title-color: #FFC2E6;
+    --footer-shadow-color: #ff0070;
+  }
+
+  :root .decorative-rec {
+    display: none;
+  }
+}
+

@@ -1,13 +1,11 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  min-height: 100vh;
-  
-  background-color: var(--main-bg-color); 
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
+  background-color: var(--main-bg-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   box-sizing: border-box;
 }
 /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
@@ -17,7 +15,7 @@
   grid-template-rows: auto 1fr auto;
   position: relative;
   justify-items: center;
-  min-height: 668px; 
+  min-height: 668px;
   padding-inline: 10px;
   padding-block-end: 66px;
   height: 100vh;
@@ -47,7 +45,6 @@
   font-size: 18px;
   line-height: 1.39;
   color: var(--text-title-color);
-  
 
   @media (width >= 768px) {
     top: 20px;
@@ -107,18 +104,18 @@
 
   @media (width >= 768px) {
     bottom: 20px;
-    left: 20px;
+    /*left: 20px;*/
   }
 
   @media (width >= 1024px) {
     bottom: 20px;
-    left: 20px;
+    /*left: 20px;*/
   }
 }
 
 .header__theme-menu {
   display: grid;
-  justify-self: end; 
+  justify-self: end;
   padding-block-start: 75px;
   font-size: 18px;
   line-height: 100%;
@@ -130,39 +127,39 @@
   }
 
   @media (width >= 1024px) {
-    justify-self: center; 
-    align-self: center; 
+    justify-self: center;
+    align-self: center;
     padding-block-start: 20px;
   }
 }
 
 .header__theme-menu-list {
   display: flex;
-  flex-direction: column; 
-  justify-content: flex-start; 
-  align-items: center; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   gap: 10px;
-  padding: 0; 
-  margin: 0; 
+  padding: 0;
+  margin: 0;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
 
   @media (width >= 1024px) {
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .header__theme-menu-item {
-  list-style: none; 
+  list-style: none;
 }
 
 .header__title {
   margin-block-start: 20px;
-  align-self: center; 
+  align-self: center;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-family: var(--font-family);
   font-weight: 700;
@@ -186,27 +183,25 @@
 }
 
 .title-decor {
-  background-color: var(--accent-color); 
-  display: inline-block; 
-  font-weight: 700; 
-  font-size: 18px; 
+  background-color: var(--accent-color);
+  display: block;
+
+
 }
 
 .header__subtitle {
-  align-self: start; 
-  max-inline-size: 355px; 
-  min-block-size: 117px; 
+  align-self: start;
+  max-inline-size: 355px;
+  min-block-size: 117px;
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
   color: var(--header-subtitle-color);
-  overflow-wrap: break-word; 
-  word-break: break-word; 
-  white-space: pre-line;
+  
 
   @media (width >= 768px) {
-    justify-self: end; 
+    justify-self: end;
     max-inline-size: 364px;
   }
 
@@ -219,53 +214,53 @@
 .header__theme-menu-button {
   background: none;
   border: 1px solid transparent;
-  color: var(--text-title-color); 
+  color: var(--text-title-color);
   font: inherit;
   cursor: pointer;
   text-transform: lowercase;
   padding: 0 13px;
   transition: border-color 0.3s;
-  inline-size: 70px; 
-  block-size: 26px; 
+  inline-size: 70px;
+  block-size: 26px;
 }
 
 .header__theme-menu-button:hover {
-  border-color: var(--button-border-hover); 
+  border-color: var(--button-border-hover);
 }
 
 .header__theme-menu-button_active {
-  border-color: var(--text-title-color); 
+  border-color: var(--text-title-color);
   cursor: default;
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: none; 
-  border-color: transparent; 
-  border-bottom: 1px solid currentColor; 
+  outline: none;
+  border-color: transparent;
+  border-bottom: 1px solid currentColor;
 }
 
 .header__theme-menu-button:disabled {
-  opacity: 1; 
-  color: var(--text-title-color); 
+  opacity: 1;
+  color: var(--text-title-color);
 }
 
 .content {
   display: grid;
   gap: 50px;
-  /*background-color: var(--main-bg-color);*/
   padding-inline: 10px;
-  margin-block-start: 40px;
+  padding-block-start: 40px;
+  
 
   @media (width >= 768px) {
     gap: 80px;
     padding-inline: 20px;
-    margin-block-start: 60px;
+  padding-block-start: 60px;
   }
 
   @media (width >= 1024px) {
     gap: 60px;
     padding-inline: 20px;
-    margin-block-start: 60px;
+    padding-block-start: 60px;
   }
 }
 
@@ -273,6 +268,7 @@
   font-style: normal;
   line-height: 23.4px;
   font-size: 18px;
+  
 
   @media (width >= 768px) {
     display: grid;
@@ -293,9 +289,9 @@
   color: var(--text-title-color);
   margin-bottom: 20px;
   font-weight: 700;
-  max-width: 100%; 
-  white-space: normal; 
-  word-break: break-word; 
+  max-width: 100%;
+  white-space: normal;
+  word-break: break-word;
 
   @media (width >= 768px) {
     margin-bottom: 0;
@@ -317,13 +313,14 @@
 
 .text-block__title {
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .text-block__title,
 .text-block__subtitle {
   background-color: var(--accent-color);
   color: var(--content-title-color);
-  margin-bottom: 10px;
+  
   font-size: 18px;
   line-height: 23.4px;
 }
@@ -340,6 +337,7 @@
   line-height: 23.4px;
 }
 
+
 .text-link {
   text-decoration: none;
   text-shadow: 2px 1px 0 var(--accent-color);
@@ -352,32 +350,10 @@
 .text-link:focus-visible {
   outline: 1px solid currentColor;
   outline-offset: 2px;
-  border-bottom: none; 
+  border-bottom: none;
 }
 
-/*.causes {
-  @media (width >= 768px) {
-    margin-block-start: -45px; 
-  }
-
-  @media (width >= 1024px) {
-    margin-block-start: 20px; 
-  }
-}
 .causes {
-  .content-section__title {
-    grid-column: 1/-1;
-
-    @media (width >= 768px) {
-      max-width: 236px;
-    }
-
-    @media (width >= 1024px) {
-      max-width: 315px; 
-    }
-  }*/
-
-  .causes {
   @media (width >= 768px) {
     margin-block-start: -45px;
   }
@@ -399,18 +375,20 @@
   }
 }
 
-  .causes .text-blocks {
-    grid-column: 1/-1;
-  }
-
+.causes .text-blocks {
+  grid-column: 1/-1;
+}
 
 .advices {
+  
 }
+
 
 .gallery {
   display: grid;
   gap: 10px;
   padding-inline: 0;
+  padding-block-start: 19px;
 
   @media (width >= 768px) {
     padding-block-start: 0;
@@ -425,14 +403,13 @@
   width: 100%;
 
   @media (width >= 768px) {
-    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    max-block-size: 768px;
+    /*max-block-size: 768px;*/
   }
 
   @media (width >= 1024px) {
-    max-block-size: 1024px;
+    /*max-block-size: 1024px;*/
   }
 }
 
@@ -522,8 +499,8 @@
     grid-row: span 2;
   }
   .gallery-section-image:nth-child(4) {
-    grid-column: 2;
-    grid-row: 2;
+    /*grid-column: 2;
+    grid-row: 2;*/
   }
   .gallery-section-image:nth-child(5) {
     grid-column: 2/4;
@@ -541,27 +518,22 @@
 @media (width >= 1024px) {
   .causes .content-section__title {
     max-width: 315px;
-    grid-column: 1 / -1; /* Заголовок занимает все 3 колонки родителя */
+    grid-column: 1 / -1;
   }
 
   .causes .text-blocks {
-    grid-column: 1 / -1; /* Сам контейнер .text-blocks занимает все 3 колонки родителя */
-    /* *** ВОТ ЧТО НУЖНО ДОБАВИТЬ/ИЗМЕНИТЬ *** */
-    grid-template-columns: repeat(
-      3,
-      1fr
-    ); /* ЭТО СОЗДАЕТ 3 КОЛОНКИ ДЛЯ ДОЧЕРНИХ ЭЛЕМЕНТОВ ВНУТРИ .text-blocks */
-    gap: 20px; /* Убедитесь, что отступы между блоками тоже есть */
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .causes .text-block__title.title-decor {
-    /* Теперь стили применяются только к заголовкам с .title-decor внутри .causes */
-    inline-size: 315px; /* Соответствует width */
-    block-size: 23px; /* Соответствует height */
-    line-height: 23px; /* Высота строки, равная высоте фона, для вертикального центрирования текста */
-    justify-self: start; /* Выравнивание по левому краю колонки (фон обтекает текст) */
-    padding-inline: 10px; /* Отступы по бокам от текста до фона */
-    padding-block: 0; /* Убираем вертикальные отступы, так как высота задана жестко */
-    justify-self: start; /* или center, в зависимости от выравнивания */
+    inline-size: 315px;
+    block-size: 23px;
+    line-height: 23px;
+    justify-self: start;
+    padding-inline: 10px;
+    padding-block: 0;
+    justify-self: start;
   }
 }

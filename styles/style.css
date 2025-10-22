@@ -244,12 +244,11 @@
   @media (width >= 768px) {
     gap: 80px;
     padding-inline: 5px 20px;
-    padding-block-start: 80px;
+    padding-block-start: 60px;
+    padding-block-end: 60px;
   }
 
   @media (width >= 1024px) {
-    padding-block-start: 60px;
-    padding-block-end: 60px;
   }
 }
 
@@ -506,7 +505,6 @@
     block-size: 23px;
     line-height: 23px;
     justify-self: start;
-    padding-inline: 10px;
     padding-block: 0;
   }
 }

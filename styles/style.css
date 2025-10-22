@@ -382,8 +382,7 @@
   @media (width >= 768px) {
     gap: 20px;
   }
-  @media (width >= 1024px) {
-  }
+
 }
 
 .gallery-section {
@@ -509,6 +508,5 @@
     justify-self: start;
     padding-inline: 10px;
     padding-block: 0;
-    justify-self: start;
   }
 }

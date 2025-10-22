@@ -19,7 +19,7 @@
   --header-subtitle-color: #353430;
   --content-text-color: #353430;
   --footer-title-color: #ffc2e6;
-  --footer-shadow-color: #ff0070;
+  --footer-shadow-color: #ff8dcb;
 }
 
 :root.theme-light .decorative-rec {
@@ -38,7 +38,7 @@
     --header-subtitle-color: #353430;
     --content-text-color: #353430;
     --footer-title-color: #ffc2e6;
-    --footer-shadow-color: #ff0070;
+    --footer-shadow-color: #ff8dcb;
   }
 
   :root .decorative-rec {

@@ -247,9 +247,6 @@
     padding-block-start: 60px;
     padding-block-end: 60px;
   }
-
-  @media (width >= 1024px) {
-  }
 }
 
 .content-section {

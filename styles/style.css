@@ -1,6 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background-image: var(--bg-image); /* фон */
   background-color: var(--main-bg-color);
   background-size: cover;
   background-position: center;
@@ -160,7 +161,6 @@
 
   @media (width >= 768px) {
     margin-block-start: 20px;
-
     justify-self: start;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     inset-inline-start: calc(-1 * var(--main-gap));
@@ -168,9 +168,6 @@
 
   @media (width >= 1024px) {
     margin-block-start: 165px;
-
-    justify-self: start;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
@@ -181,7 +178,7 @@
 
 .header__subtitle {
   align-self: start;
-  max-inline-size: 355px;
+  max-inline-size: none;
   min-block-size: 117px;
   font-family: var(--font-family);
   font-weight: 700;
@@ -243,7 +240,7 @@
 
   @media (width >= 768px) {
     gap: 80px;
-    padding-inline: 5px 20px;
+    padding-inline: 20px;
     padding-block-start: 60px;
     padding-block-end: 60px;
   }
@@ -261,9 +258,7 @@
   }
 
   @media (width >= 1024px) {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
   }
 }
 
@@ -378,7 +373,6 @@
   @media (width >= 768px) {
     gap: 20px;
   }
-
 }
 
 .gallery-section {
@@ -445,12 +439,6 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     padding-right: 20px;
   }
-
-  @media (width >= 1024px) {
-    align-self: center;
-    justify-self: center;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
 }
 
 @media (width >= 768px) {
@@ -468,10 +456,7 @@
     grid-column: 1;
     grid-row: span 2;
   }
-  .gallery-section-image:nth-child(4) {
-    /*grid-column: 2;
-    grid-row: 2;*/
-  }
+
   .gallery-section-image:nth-child(5) {
     grid-column: 2/4;
     grid-row: 3;
@@ -497,8 +482,8 @@
     gap: 20px;
   }
 
-  .causes .text-block__title.title-decor {
-    inline-size: 315px;
+  .causes .text-block__title {
+    inline-size: 100%;
     block-size: 23px;
     line-height: 23px;
     justify-self: start;

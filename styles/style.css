@@ -235,14 +235,14 @@
   gap: 50px;
   padding-inline: 10px;
   padding-block-start: 40px;
-  padding-block-end: 50px;
+  padding-block-end: 40px;
   height: 100%;
 
   @media (width >= 768px) {
     gap: 80px;
     padding-inline: 20px;
     padding-block-start: 60px;
-    padding-block-end: 80px;
+    padding-block-end: 60px;
   }
 }
 
@@ -255,6 +255,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
+    
   }
 
   @media (width >= 1024px) {
@@ -359,6 +360,9 @@
 
 h4.text-block__subtitle.title-decor.font-normal {
   margin: 0;
+  @media (width >= 768px) {
+  
+  }
 }
 
 .gallery {
@@ -438,6 +442,7 @@ h4.text-block__subtitle.title-decor.font-normal {
 }
 
 @media (width >= 768px) {
+  
   .gallery__title {
     grid-column: 1 / -1; /* заголовок на всю ширину */
   }

@@ -356,10 +356,8 @@
   }
 }
 
-h4.text-block__subtitle.title-decor.font-normal {
+h4.text-block__subtitle {
   margin: 0;
-  @media (width >= 768px) {
-  }
 }
 
 .gallery {

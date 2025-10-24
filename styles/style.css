@@ -98,7 +98,7 @@
 
   @media (width >= 768px) {
     bottom: 20px;
-    left: 5px;
+    left: 20px;
   }
 }
 
@@ -119,7 +119,6 @@
     justify-self: center;
     align-self: center;
     padding-block-start: 20px;
-    padding-right: 15px;
   }
 }
 
@@ -255,7 +254,6 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    
   }
 
   @media (width >= 1024px) {
@@ -361,7 +359,6 @@
 h4.text-block__subtitle.title-decor.font-normal {
   margin: 0;
   @media (width >= 768px) {
-  
   }
 }
 
@@ -437,12 +434,10 @@ h4.text-block__subtitle.title-decor.font-normal {
     align-self: center;
     justify-self: center;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    padding-right: 20px;
   }
 }
 
 @media (width >= 768px) {
-  
   .gallery__title {
     grid-column: 1 / -1; /* заголовок на всю ширину */
   }
